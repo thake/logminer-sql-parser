@@ -21,7 +21,10 @@ public class DateTimeLiteralExpression extends ASTNodeAccessImpl implements Expr
     }
 
     public void setValue(String value) {
-        this.value = value;
+        if(value.startsWith("'") && value.endsWith("'")){
+            value = value.substring(1, value.length()-1);
+        }
+        this.value = value.trim();
     }
 
     public DateTime getType() {
@@ -37,7 +40,7 @@ public class DateTimeLiteralExpression extends ASTNodeAccessImpl implements Expr
     }
 
     @Override public String toString() {
-        return type.name() + " " + value;
+        return type.name() + " '" + value + "'";
     }
 
     public enum DateTime {
