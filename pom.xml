@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.thake.logminer</groupId>
     <artifactId>logminer-sql-parser</artifactId>
-    <version>0.1.0-SNAPSHOT</version>
+    <version>0.1.0</version>
     <name>Parser for SQL statements produced by oracle logminer</name>
     <inceptionYear>2020</inceptionYear>
     <organization>
@@ -74,7 +74,7 @@
         <url>https://github.com/thake/logminer-sql-parser</url>
         <connection>scm:git:git://github.com/thake/logminer-sql-parser.git</connection>
         <developerConnection>scm:git:git@github.com:thake/logminer-sql-parser.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>v0.1.0</tag>
     </scm>
 
     <issueManagement>
